@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowEditData" apply="controler.EditDataController" width="500px">
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="ID : "/>
+                    <intbox id="tbid" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Nama : "/>
+                    <textbox id="tbNama" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Alamat : "/>
+                    <textbox id="tbAlamat" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Umur : "/>
+                    <intbox id="tbUmur" width="200px"/>
+                </row>
+                <row>
+                    <label value="DepartemenEdit : "/>
+                    <combobox id="cbSekolahEdit" width="200px"/>
+                </row>
+                <row>
+<!--                    constraint="no empty" -->
+                <row>
+                    <label value="Gender : "/>
+                    <radiogroup id="gender">
+                        <radio value="F"/>Female
+                        <radio value="M"/>Male
+                    </radiogroup>
+                </row>
+            </rows>
+        </grid>
+        <hbox>
+            <button id="buttonSave" label="Edit"/>
+            <button id="buttonClose" label="Cancel"/>
+        </hbox>
+    </window>
+</zk>

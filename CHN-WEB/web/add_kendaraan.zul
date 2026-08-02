@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowAddKendaraan" apply="controler.AddKendaraanController">
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="ID : "/>
+                    <intbox id="tbid" width="200px"/>
+                </row>
+                <row>
+                    <label value="Nomor Polisi : "/>
+                    <textbox id="tbnomorpolisi" width="200px"/>
+                </row>
+                <row>
+                    <label value="Merk : "/>
+                    <textbox id="tbmerk" width="200px"/>
+                </row>
+                <row>
+                    <label value="Tipe : "/>
+                    <textbox id="tbtipe" width="200px"/>
+                </row>
+                <row>
+                    <label value="Tahun Pembuatan : "/>
+                    <intbox id="tbtahunp" width="200px"/>
+                </row>
+                <row>
+                    <label value="Status Tersedia : "/>
+                    <checkbox id="cebstatus" width="200px"/>
+                </row>
+                <row>
+                    <label value="Harga Perhari : "/>
+                    <decimalbox format="###,###,##0.00" id="dbharga" width="200px"/>
+                </row>
+            </rows>
+        </grid>
+        <hbox>
+            <button id="buttonSave" label="Save"/>
+            <button id="buttonClose" label="Close"/>
+        </hbox>
+    </window>
+</zk>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+
+    <window id="windowAddUser"
+            width="420px"
+            apply="controler.AddUserController">
+
+        <vlayout spacing="8px" style="padding:10px">
+
+            <label value="Username"/>
+            <textbox id="tbNamaUser" readonly="true" width="100%"/>
+
+            <label value="First Name"/>
+            <textbox id="tbFirstName" width="100%"/>
+
+            <label value="Last Name"/>
+            <textbox id="tbLastName" width="100%"/>
+
+            <label value="Password"/>
+            <textbox id="tbPassword" width="100%" type="password"/>
+
+            <label value="No. Telepon"/>
+            <textbox id="tbNoTlp" width="100%"/>
+
+            <separator/>
+
+            <hbox spacing="10px">
+                <button id="buttonSave" label="Simpan"/>
+                <button id="buttonClose" label="Tutup"/>
+            </hbox>
+
+        </vlayout>
+
+    </window>
+
+</zk>

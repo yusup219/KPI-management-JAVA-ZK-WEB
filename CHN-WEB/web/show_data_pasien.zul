@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+  <window id="WindowDP" apply="controler.DataPasienController">
+        <listbox id="ListboxDP">
+            <listhead>
+                <listheader label="ID"/>
+                <listheader label="Nama"/>
+                <listheader label="Umur"/>
+                <listheader label="Jenis Kelamin"/>
+                <listheader label="Administrasi"/>
+                <listheader label="Status Pembayaran"/>
+                <listheader label="Tanggal Lahir"/>
+            </listhead>
+        </listbox>
+        <hbox>
+            <button id="BtAdd" label="Tambah"/>
+            <button id="BtEdit" label="Ubah"/>
+            <button id="BtDelete" label="Hapus"/>
+        </hbox>
+    </window>
+</zk>

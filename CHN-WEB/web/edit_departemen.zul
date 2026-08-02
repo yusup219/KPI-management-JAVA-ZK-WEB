@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowEditSekolahData" apply="controler.EditDepartemenController" width="500px">
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="ID : "/>
+                    <textbox id="tbid_departemen" width="200px" readonly="true"/>
+                </row>
+                 <row>
+                    <label value="Nama Departemen : "/>
+                    <textbox id="tbdepartemen" width="200px"/>
+                </row>
+                <row>
+                    <label value="Kepala Departemen : "/>
+                    <textbox id="tbkepala_departemen" width="200px"/>
+                </row>
+            </rows>
+        </grid>
+        <hbox>
+            <button id="buttonSave" label="Edit"/>
+            <button id="buttonClose" label="Cancel"/>
+        </hbox>
+    </window>
+</zk>

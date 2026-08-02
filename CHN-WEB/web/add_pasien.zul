@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+<window id="WindowAdd" apply="controler.AddPasien"  width="500px" >
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="ID :"/>
+                    <intbox id="tbID"/> 
+                </row>
+                <row>
+                    <label value="Nama :"/>
+                    <textbox id="tbnama"/> 
+                </row>
+                <row>
+                    <label value="Umur :"/>
+                    <intbox id="tbumur"/> 
+                </row>
+                <row>
+                    <label value="Jenis Kelamin :"/>
+                    <radiogroup id="jenkel">
+                        <radio value="Perempuan"/>Perempuan
+                        <radio value="Laki-laki"/>Laki-laki
+                    </radiogroup> 
+                </row>
+                <row>
+                    <label value="Administrasi :"/>
+                    <radiogroup id="Admin">
+                         <radio value="KIS"/>KIS
+                        <radio value="BPJS"/>BPJS
+                        <radio value="Reguler"/>Reguler
+                      
+                    </radiogroup> 
+                </row>
+                 <row>
+                    <label value="Status Pembayaran : "/>
+                   <checkbox id="checkActive" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Tanggal Lahir : "/>
+                   <datebox constraint="no empty" format="dd-MM-yyyy" id="dbStart" width="200px"/>
+                </row>
+            </rows>
+        </grid>
+        <hbox>
+            <button id="ButtonSave" label="Simpan"/>
+            <button id="ButtonClose" label="Keluar"/>
+        </hbox>
+    </window>
+</zk>

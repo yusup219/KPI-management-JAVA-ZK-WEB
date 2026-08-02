@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowAddPegawai1" apply="controler.AddPegawai1Controller" width="500px">
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+               <row>
+                    <label value="Nama Lengkap : "/>
+                    <textbox id="tbNama" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Alamat : "/>
+                    <textbox id="tbAlamat" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Umur : "/>
+                    <intbox id="tbUmur" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Tanggal Lahir : "/>
+                   <datebox constraint="no empty" format="dd-MM-yyyy" id="dbStart" width="200px" readonly="true"/>
+                </row>
+                <row>
+                    <label value="Gender : "/>
+                    <radiogroup id="gender">
+                        <radio value="F"/>Female
+                        <radio value="M"/>Male
+                    </radiogroup>
+                </row>
+                    <row>
+                    <label value="Departemen : "/>
+                    <combobox id="cbSekolah" width="200px" readonly="true"/>
+                </row>
+                
+            </rows>
+        </grid>
+        <hbox>
+            <button id="buttonSave" label="Save"/>
+            <button id="buttonClose" label="Close"/>
+        </hbox>
+    </window>
+</zk>

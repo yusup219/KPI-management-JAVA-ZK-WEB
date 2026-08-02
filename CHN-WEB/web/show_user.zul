@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window apply="controler.ShowUserController">
+        <vlayout spacing="10px">
+            <label value="Daftar Data User" style="font-size:20px; font-weight:bold; color:#1e3c72;"/>
+
+            <hbox>
+                <button id="buttonTambah" label="Add" style="background:#1e3c72; color:white; cursor:pointer;"/>
+                <button id="buttonEdit" label="Edit" style="background:#1e3c72; color:white; cursor:pointer;"/>
+                <button id="buttonDelete" label="Delete" style="background:#1e3c72; color:white; cursor:pointer;"/>
+            </hbox>
+            <hbox>                
+                <label value="Cari User : " style="font-weight: bold;" />
+                <textbox id="txtCari" width="200px" />
+                <button id="btnCari" label="Cari" style="background:#1e3c72; color:white; cursor:pointer;" />  
+                <button id="btnRefresh" label="Refresh" style="cursor:pointer;" />
+          
+            </hbox>
+
+            <listbox id="listUser" mold="paging" pageSize="9">
+                <listhead>
+                    <listheader label="ID"          width="120px"/>
+                    <listheader label="Username"    width="200px"/>
+                    <listheader label="First Name"  width="180px"/>
+                    <listheader label="Last Name"   width="180px"/>
+                    <listheader label="Password"    width="150px"/>
+                    <listheader label="No. Telepon" width="120px"/>
+                </listhead>
+            </listbox>
+        </vlayout>
+    </window>
+</zk>

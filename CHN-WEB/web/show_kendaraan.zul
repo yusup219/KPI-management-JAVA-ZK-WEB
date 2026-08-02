@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id= "windowShowKendaraan" apply="controler.ShowKendaraanController">
+        <listbox id="listboxShowKendaraan"> 
+            <listhead>
+                <listheader label="ID"/>
+                <listheader label="Nomor Polisi"/>
+                <listheader label="Merk"/>
+                <listheader label="Tipe"/>
+                <listheader label="Tahun Pembuatan"/>
+                <listheader label="Status Tersedia"/>
+                <listheader label="Harga Perhari"/>
+            </listhead>
+        </listbox>
+        <hbox>
+            <button id="buttonAdd" label="Add"/>
+            <button id="buttonEdit" label="Edit"/>
+            <button id="buttonDelete" label="Delete"/>
+        </hbox>
+    </window>
+</zk>

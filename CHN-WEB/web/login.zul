@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window apply ="controler.LoginControler">
+        <hbox>
+            <label value="Nama" />
+            <textbox id="tbNama" width="200px"/>
+        </hbox>
+        <hbox>
+            <label value="Umur" />
+            <intbox id="tbUmur" width="200px"/>
+        </hbox>
+        <button id="buttonSubmit" Label="Submit"/> 
+        <button id="buttonDelete" Label="Delete"/>
+        <button id ="buttonEdit" Label="Edit"/>
+    </window>
+     
+        
+   
+</zk>

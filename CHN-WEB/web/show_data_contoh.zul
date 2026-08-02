@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="show_data_contoh_window" apply="controler.ShowDataContohController">
+        <listbox id="listBoxContoh">
+            <listhead>
+                <listheader label="Nama"/>
+                <listheader label="Umur"/>
+                <listheader label="Alamat"/>
+                <listheader label="Id Sekolah"/>
+                <listheader label="Status Kelulusan"/>
+                <listheader label="Jenis Kelamin"/>
+                <listheader label="Tanggal Lahir"/>
+            </listhead>
+        </listbox>
+    </window>
+</zk>

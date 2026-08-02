@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowDeleteDP" apply="controler.DeleteDP" width="500px">
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="ID : "/>
+                    <intbox id="tbid" width="200px"/>
+                </row>
+                 
+            </rows>
+        </grid>
+        <hbox>
+            <button id="BtDelete" label="Delete"/>
+            <button id="BtClose" label="Close"/>
+        </hbox>
+    </window>
+</zk>

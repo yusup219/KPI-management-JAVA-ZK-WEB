@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowShowPegawai" apply="controler.ShowDataController">
+    <listbox id="listboxShowData">
+            <listhead>
+                <listheader label="id"/>
+                <listheader label="Nama"/>
+                <listheader label="Umur"/>
+                <listheader label="Jenis Kelamin"/>
+                <listheader label="Jabatan"/>
+                <listheader label="Status Aktif"/>
+                <listheader label="Tanggal Diterima"/>
+            </listhead>
+        </listbox>
+       
+        <hbox>
+            <button id="buttonAdd" label="Add"/>
+            <button id="buttonEdit" label="Edit"/>
+            <button id="buttonDelete" label="Delete"/>
+        </hbox>
+    </window>
+</zk>

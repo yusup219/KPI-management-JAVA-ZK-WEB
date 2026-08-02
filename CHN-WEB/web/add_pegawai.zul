@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowAddPegawai" apply="controler.AddpegawaiController" width="500px">
+        <grid>
+            <columns>
+                <column width="50%"/>
+                <column width="50%"/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="ID : "/>
+                    <intbox id="tbid" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Nama : "/>
+                    <textbox id="tbNama" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Umur : "/>
+                    <intbox id="tbUmur" width="200px"/>
+                </row>
+                 <row>
+                    <label value="Status Aktif : "/>
+                   <checkbox id="checkActive" width="200px"/>
+                </row>
+                <row>
+                    <label value="Gender : "/>
+                    <radiogroup id="gender">
+                        <radio value="Laki-laki"/>Perempuan 
+                        <radio value="Perempuan"/>Laki-laki
+                    </radiogroup>
+                </row>
+                 <row>
+                    <label value="Jabatan : "/>
+                    <radiogroup id="jabatan">
+                        <radio value="M"/>Manager
+                        <radio value="S"/>Staff
+                        <radio value="A"/>Admin
+                    </radiogroup>
+                </row>
+                <row>
+                    <label value="Tanggal Masuk : "/>
+                   <datebox constraint="no empty" format="dd-MM-yyyy" id="dbStart" width="200px"/>
+                </row>
+            </rows>
+        </grid>
+        <hbox>
+            <button id="buttonSave" label="Save"/>
+            <button id="buttonClose" label="Close"/>
+        </hbox>
+    </window>
+</zk>

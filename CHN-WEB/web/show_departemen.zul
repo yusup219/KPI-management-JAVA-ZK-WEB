@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window apply="controler.ShowDepartemenController">
+        <label value="Daftar Data Departemen" 
+               style="font-size: 20px; font-weight: bold; color: #1e3c72; font-family: 'Segoe UI', sans-serif;"/> 
+        <separator height="10px"/>
+
+        <hbox>
+            <button id="buttonAdds" label="Adds" style="background:#1e3c72; color:white; cursor:pointer;"/>
+            <button id="buttonEdits" label="Edits" style="background:#1e3c72; color:white; cursor:pointer;"/>
+            <button id="buttonDeletes" label="Deletes" style="background:#1e3c72; color:white; cursor:pointer;"/>
+        </hbox>
+        <separator height="15px"/>
+
+        <hbox>                
+            <label value="Cari Departemen : " style="font-weight: bold;" />
+            <textbox id="txtCari" width="200px" />
+            <button id="btnCari" label="Cari" style="background:#1e3c72; color:white; cursor:pointer;" />   
+            <button id="btnRefresh" label="Refresh" style="cursor:pointer;" />         
+        </hbox>
+        <separator height="15px"/>
+
+        <listbox id="listboxSekolahShowData" mold="paging" pageSize="9">
+            <listhead>
+                <listheader label="id"/>
+                <listheader label="Departemen"/>
+                <listheader label="Kepala Departemen"/>
+            </listhead>
+        </listbox>
+        
+    </window>
+</zk>

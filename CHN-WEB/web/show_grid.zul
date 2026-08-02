@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window apply="controler.ShowGridController"> 
+        <grid id="gridSiswa" width="100%" height="500px">
+            <columns>
+                <column label="id" width="5%"/>
+                <column label="Nama" width="15%"/>
+                <column label="Alamat" width="40%"/>
+                <column label="Umur" width="10%"/>
+                <column label="Departemen" width="10%"/>
+                <column label="Tombol" width="10%"/>
+                <column label="Tombol1" width="10%"/>
+            </columns>
+            
+        </grid>
+        <hbox>
+            <button id="buttonAdd" label="Add"/>
+           
+           
+        </hbox>
+        <listbox id="listboxSekolahShowData">
+            <listhead>
+                <listheader label="id"/>
+                <listheader label="Perusahaan"/>
+                <listheader label="Alamat"/>
+            </listhead>
+        </listbox>
+        <hbox>
+            <button id="buttonAdds" label="Adds"/>
+            <button id="buttonEdits" label="Edits"/>
+            <button id="buttonDeletes" label="Deletes"/>
+        </hbox>
+    </window>
+</zk>

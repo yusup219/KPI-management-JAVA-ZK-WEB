@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    
+    <window id="windowAddPengguna" width="450px"
+            apply="controler.AddPengguna">
+        
+        <grid>
+            <columns>
+                <column width="130px" label="Field" />
+                <column label="Input" />
+            </columns>
+            <rows>
+                <row>
+                    <label value="Username :" />
+                    <textbox id="tbnamaUser" disabled="true" width="95%" constraint="no empty" />
+                </row>
+                <row>
+                    <label value="First Name :" />
+                    <textbox id="tbfirstName" instant="true" width="95%" />
+                </row>
+                <row>
+                    <label value="Last Name :" />
+                    <textbox id="tblastName" instant="true" width="95%" />
+                </row>
+                <row>
+                    <label value="Password :" />
+                    <textbox id="tbpassword" type="password" width="95%" constraint="no empty" />
+                </row>
+                <row>
+                    <label value="No. Telepon :" />
+                    <textbox id="tbnoTlp" width="95%" />
+                </row>
+            </rows>
+        </grid>
+        
+        <separator height="15px" />        
+ 
+        <div align="right">
+            <button id="buttonSimpanUser" label="Simpan" style="margin-right: 5px; background:#1e3c72; color:white; cursor:pointer;" />
+            <button id="buttonBatal" label="Batal" onClick="windowAddPengguna.detach()" />
+        </div>
+        
+    </window>
+</zk>

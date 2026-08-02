@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window border="normal"
+            width="100%"
+            height="100%"
+            apply="controler.IndexController"
+            id="apaaja" >
+            
+        <caption style="font-weight:bold;">
+        </caption>
+
+        <borderlayout width="100%" height="100%">
+
+            <north size="120px" border="none">
+                <div style="width:100%; height:100%; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); position: relative;">
+                    <image src="/foto/cuy.png"
+                           width="100%"
+                           height="100%" 
+                           style="object-fit: cover; opacity: 0.8;"
+                           id="imgBanner"/> 
+                </div>
+            </north>
+
+            <west size="260px"
+                  title="Navigasi Utama"
+                  collapsible="true"
+                  style="background-color: #124e8c;">
+
+                <vlayout spacing="15px" style="padding:15px;" hflex="1" vflex="1">
+                    
+                    <div style="background: #1a3561; padding: 15px; border-radius: 8px; text-align: center;">
+                        <label value="Welcome" style="color: #94a3b8; font-size: 12px; display: block;" />
+                        <label id="lblWelcome" style="color: #ffffff; font-size: 16px; font-weight: bold; display: block; margin-top: 2px;" />
+                    </div>
+
+                    <tree id="menuTree" width="100%" vflex="1" style="border:none; background:transparent;">
+                        <treechildren>
+                            <treeitem label="Menu" open="true">
+                                <treechildren id="treeChildren">
+                                    <treeitem id="treePegawai" label="Data Pegawai" />
+                                    <treeitem id="treeDepartemen" label="Data Departemen" />
+                                    <treeitem id="treeKPI" label="Data Nilai KPI" />
+                                    <treeitem id="treeDataUser" label="Data User" />
+                                </treechildren>
+                            </treeitem>
+                        </treechildren>
+                    </tree>
+
+                    <button id="buttonLogout"
+                            label="Log Out"
+                            width="100%" 
+                            style="background: pointer;"/>
+                    
+                </vlayout>
+            </west>
+
+            <center border="none">
+                <div width="100%"
+                     height="100%"
+                     style="overflow-y:auto; overflow-x:hidden; background-color: #ffffff; padding: 20px;">
+
+                    <vlayout id="formContainer"
+                             width="100%"
+                             vflex="1">
+                             
+                        <include id="includeForm"
+                                 src="show_pegawai1.zul"/>
+                                 
+                    </vlayout>
+
+                </div>
+            </center>
+
+        </borderlayout>
+
+    </window>
+</zk>

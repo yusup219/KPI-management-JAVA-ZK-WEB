@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowShowData" apply="controler.ShowPegawai1Controller">
+        <label value="Daftar Data Pegawai" 
+               style="font-size: 20px; font-weight: bold; color: #1e3c72; font-family: 'Segoe UI', sans-serif;"/>
+        <separator height="10px"/>
+
+        <hbox>
+            <button id="buttonAdd" label="Add" style="background:#1e3c72; color:white; cursor:pointer;"/>
+            <button id="buttonEdit" label="Edit" style="background:#1e3c72; color:white; cursor:pointer;"/>
+            <button id="buttonDelete" label="Delete" style="background:#1e3c72; color:white; cursor:pointer;"/>
+        </hbox>
+        <separator height="15px"/>
+
+        <hbox>           
+            <label value="Cari Pegawai : " style="font-weight: bold;" />
+            <textbox id="txtCari" width="200px" />
+            <button id="btnCari" label="Cari" style="background:#1e3c72; color:white; cursor:pointer;" />    
+            <button id="btnRefresh" label="Refresh" style="cursor:pointer;" />        
+        </hbox>
+        <separator height="15px"/>
+
+        <listbox id="listboxShowData" mold="paging" pageSize="9">
+            <listhead>
+                <listheader label="id"/>
+                <listheader label="Nama"/>
+                <listheader label="Alamat"/>
+                <listheader label="Umur"/>
+                <listheader label="Departemen"/>
+                <listheader label="Tanggal Lahir" width="150" height="40"/>
+                <listheader label="Gender"/>
+            </listhead>
+        </listbox>   
+    </window>
+</zk>
